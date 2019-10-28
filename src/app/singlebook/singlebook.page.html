@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+    Detail of Selected Book
+    </ion-title>
+    <ion-icon slot="end" color="medium" size="large"   name="arrow-dropleft-circle" (click)="back()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="../../assets/book.png">
+    <ion-card-header>
+      <ion-card-title><h1>{{singleBook?.name}}</h1></ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      
+      <h2><span style="font-weight: bold;"> Author:</span> {{singleBook?.author}}</h2>
+      <h2><span style="font-weight: bold;"> Edition:</span>{{singleBook?.ed}}th</h2>
+      
+    
+      
+    </ion-card-content>
+  
+
+
+  </ion-card>
+</ion-content>

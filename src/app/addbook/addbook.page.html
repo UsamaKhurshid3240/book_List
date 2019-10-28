@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add New Book</ion-title>
+    
+  </ion-toolbar>
+
+  <ion-fab horizontal="end" class="back-btn" vertical="top" slot="fixed"  edge>
+    
+    <ion-icon ios="ios-backspace" md="md-backspace"(click)="back()" ></ion-icon>
+
+
+</ion-fab>
+ 
+</ion-header>
+
+<ion-content fullscreen>
+
+
+  
+    <ion-card-content >
+     
+      <ion-card class="form" >
+   
+   
+        <ion-card-content >
+        <form >
+          <ion-list >
+           
+            <ion-item>
+              <ion-label color="primary" position="floating">Name</ion-label>
+              <ion-input  id="name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary" position="floating">Author</ion-label>
+                <ion-input id="auth" [(ngModel)]="author"  [ngModelOptions]="{standalone: true}" required></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label color="primary" position="floating">Edition</ion-label>
+                  <ion-input id="ed" [(ngModel)]="edition"  [ngModelOptions]="{standalone: true}" required></ion-input>
+                </ion-item>
+               
+           
+         <ion-item>
+          <button ion-button class="add-btn" (click)="addbook()" >SAVE</button>
+         </ion-item>
+          </ion-list>
+         
+        </form>
+        </ion-card-content>
+      
+    
+    
+      </ion-card>
+    
+    
+      
+    </ion-card-content>
+ 
+  
+
+</ion-content>
